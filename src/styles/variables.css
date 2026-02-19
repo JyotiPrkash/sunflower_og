@@ -1,0 +1,62 @@
+:root {
+  /* Sunflower & Love Theme Colors */
+  --color-primary: #FFD700; /* Golden Yellow */
+  --color-primary-dark: #FFA500; /* Orange-Yellow */
+  --color-secondary: #8B4513; /* Saddle Brown */
+  --color-accent: #228B22; /* Forest Green */
+  --color-background: #FFFDF5; /* Creamy White */
+  --color-text: #5D4037; /* Dark Brown Text */
+  --color-heart: #FF6B6B; /* Soft Red for hearts */
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  /* Typography */
+  --font-family-main: 'Rubik Bubbles', cursive, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+body {
+  margin: 0;
+  font-family: var(--font-family-main);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+.highlight {
+  color: var(--color-primary-dark);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  transform: scale(1.05);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: radial-gradient(circle, var(--color-background) 0%, #FFEFD5 100%);
+}
