@@ -26,7 +26,7 @@ const LoginPage = () => {
     <div className="login-container">
       <div className="login-card">
         <span className="sunflower-icon">🌻</span>
-        <h2>Welcome to LoveOh</h2>
+        <h2>Welcome Love!</h2>
         <p>Before we begin, what is your beautiful name?</p>
         
         <form onSubmit={handleLogin}>
